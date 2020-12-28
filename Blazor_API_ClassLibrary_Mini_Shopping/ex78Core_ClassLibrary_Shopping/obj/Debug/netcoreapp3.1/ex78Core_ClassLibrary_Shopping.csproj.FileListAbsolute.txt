@@ -1,0 +1,9 @@
+C:\Users\Code\source\repos\ex78Core_Blazor_Shopping\ex78Core_ClassLibrary_Shopping\bin\Debug\netcoreapp3.1\ex78Core_ClassLibrary_Shopping.deps.json
+C:\Users\Code\source\repos\ex78Core_Blazor_Shopping\ex78Core_ClassLibrary_Shopping\bin\Debug\netcoreapp3.1\ex78Core_ClassLibrary_Shopping.dll
+C:\Users\Code\source\repos\ex78Core_Blazor_Shopping\ex78Core_ClassLibrary_Shopping\bin\Debug\netcoreapp3.1\ex78Core_ClassLibrary_Shopping.pdb
+C:\Users\Code\source\repos\ex78Core_Blazor_Shopping\ex78Core_ClassLibrary_Shopping\obj\Debug\netcoreapp3.1\ex78Core_ClassLibrary_Shopping.csprojAssemblyReference.cache
+C:\Users\Code\source\repos\ex78Core_Blazor_Shopping\ex78Core_ClassLibrary_Shopping\obj\Debug\netcoreapp3.1\ex78Core_ClassLibrary_Shopping.AssemblyInfoInputs.cache
+C:\Users\Code\source\repos\ex78Core_Blazor_Shopping\ex78Core_ClassLibrary_Shopping\obj\Debug\netcoreapp3.1\ex78Core_ClassLibrary_Shopping.AssemblyInfo.cs
+C:\Users\Code\source\repos\ex78Core_Blazor_Shopping\ex78Core_ClassLibrary_Shopping\obj\Debug\netcoreapp3.1\ex78Core_ClassLibrary_Shopping.csproj.CoreCompileInputs.cache
+C:\Users\Code\source\repos\ex78Core_Blazor_Shopping\ex78Core_ClassLibrary_Shopping\obj\Debug\netcoreapp3.1\ex78Core_ClassLibrary_Shopping.dll
+C:\Users\Code\source\repos\ex78Core_Blazor_Shopping\ex78Core_ClassLibrary_Shopping\obj\Debug\netcoreapp3.1\ex78Core_ClassLibrary_Shopping.pdb

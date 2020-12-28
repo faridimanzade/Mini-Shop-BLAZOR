@@ -1,0 +1,28 @@
+﻿@page "/createproduct"
+@inherits CreateProductBase
+
+<h3>Create New Product</h3>
+
+
+<EditForm Model="Product" OnValidSubmit="CreateProduct">
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+    <ValidationSummary></ValidationSummary>
+    <div class="form-group">
+        <label>Name: </label>
+        <InputText @bind-Value="Product.Name"></InputText>
+        <ValidationMessage For="()  => Product.Name"></ValidationMessage>
+    </div>
+    <div class="form-group">
+        <label>Amount: </label>
+        <InputText @bind-Value="Amount"></InputText>
+        <ValidationMessage For="()  => Amount"></ValidationMessage>
+    </div>
+    <div class="form-group">
+        <label>Price: </label>
+        <InputText @bind-Value="Price"></InputText>
+        <ValidationMessage For="()  => Price"></ValidationMessage>
+    </div>
+    <div class="form-group">
+        <input class="btn btn-warning" type="submit" name="Create" value="Create Product" />
+    </div>
+</EditForm>

@@ -1,0 +1,102 @@
+﻿@page "/allproducts"
+@inherits AllProductsBase
+
+<h3>Products Page</h3>
+
+@if (Products == null)
+{
+    <p>Loading ...</p>
+}
+else
+{
+    <table class="table table-light">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Products)
+            {
+                <tr>
+                    <th scope="row">@item.id</th>
+                    <td>@item.Name</td>
+                    <td>$ @item.Price</td>
+                    <td>@item.Amount</td>
+                    <td>
+                        <button @onclick="()=>AddToChart(item.id)" class="btn btn-primary">Add To Chart</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<h5>Want To Create New Product? Then <a href="Identity/Account/Register">Register</a> or <a href="Identity/Account/Login">Log In</a></h5>
+
+<br />
+<br />
+<br />
+
+
+@if (SelectedProducts == null || SelectedProducts.Count == 0)
+{
+    <h5>Your Orders</h5>
+    <p>No Orders Created Yet ...</p>
+}
+else
+{
+    <div class="row my-3">
+        <button @onclick="() => ClearList()" class="btn btn-secondary ml-auto mr-5" style="font-size: 30px;">Clear Orders List</button>
+    </div>
+    <table class="table table-light orders-table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in SelectedProducts)
+            {
+                <tr>
+                    <th scope="row">@item.id</th>
+                    <td>@item.Name</td>
+                    <td>
+                        $
+                        @{
+                            var price = @item.Price * @item.Amount;
+                        }
+                        @price
+                    </td>
+                    <td>@item.Amount</td>
+                    <td>
+                        @if (item.Amount > 1)
+                        {
+                            <button @onclick="() => RemoveOne(item.id)" class="btn btn-success">Remove One</button>
+                        }
+                        <button @onclick="() => RemoveAll(item.id)" class="btn btn-danger">Remove All</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="row mb-5 mt-2">
+        <h2 class="ml-auto mr-5">
+            <p class="btn btn-dark" style="font-size: 30px; margin: 0;">Total Amount: $ @TotalPrice</p>
+            <button class="btn btn-primary" style="font-size: 30px;" @onclick="() => BuyProducts()">Buy</button>
+        </h2>
+    </div>
+}
+
+
+@*<a href="/detail/@item.id">Detail</a> |
+    <a href="/edit/@item.id" style="cursor: pointer; text-decoration: underline; color: green;">Edit</a>
+    <a @onclick="() => RemoveFromChart(item.id)" class="btn btn-danger">Remove All</a>*@

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ex78Core_ClassLibrary_Shopping/1.0.0": {
+        "runtime": {
+          "ex78Core_ClassLibrary_Shopping.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ex78Core_ClassLibrary_Shopping/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

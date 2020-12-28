@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql.local",
+      "connectionId": "ex78Core_Blazor_ShoppingContextConnection"
+    }
+  }
+}
